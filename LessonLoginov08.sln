@@ -5,6 +5,14 @@ VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LessonLoginov08", "LessonLoginov08\LessonLoginov08.csproj", "{580103E9-C018-4370-8CFC-C746892DDF4A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lesson", "lesson", "{C5C2BBA6-E508-43E0-8E08-3D07F7AE91D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "task", "task", "{A587FFEF-AE86-4536-B188-BAC15D482E88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "les02", "les02\les02.csproj", "{06AF5929-5071-45CC-ADD4-1A3A8041D466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "les03", "les03\les03.csproj", "{DE7D5F45-FEBC-4438-A464-828CD2648307}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +23,22 @@ Global
 		{580103E9-C018-4370-8CFC-C746892DDF4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{580103E9-C018-4370-8CFC-C746892DDF4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{580103E9-C018-4370-8CFC-C746892DDF4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06AF5929-5071-45CC-ADD4-1A3A8041D466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06AF5929-5071-45CC-ADD4-1A3A8041D466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06AF5929-5071-45CC-ADD4-1A3A8041D466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06AF5929-5071-45CC-ADD4-1A3A8041D466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE7D5F45-FEBC-4438-A464-828CD2648307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7D5F45-FEBC-4438-A464-828CD2648307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7D5F45-FEBC-4438-A464-828CD2648307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7D5F45-FEBC-4438-A464-828CD2648307}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{580103E9-C018-4370-8CFC-C746892DDF4A} = {C5C2BBA6-E508-43E0-8E08-3D07F7AE91D9}
+		{06AF5929-5071-45CC-ADD4-1A3A8041D466} = {C5C2BBA6-E508-43E0-8E08-3D07F7AE91D9}
+		{DE7D5F45-FEBC-4438-A464-828CD2648307} = {C5C2BBA6-E508-43E0-8E08-3D07F7AE91D9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C2DDE476-28B9-4DBD-8012-ABC4EE968B14}
