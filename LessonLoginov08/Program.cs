@@ -36,6 +36,8 @@ namespace LessonLoginov08
 
             var r = JsonConvert.SerializeObject(d);
             Console.WriteLine(r);
+
+            Console.ReadKey();
         }
     }
 }
