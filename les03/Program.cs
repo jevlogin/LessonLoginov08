@@ -11,14 +11,14 @@ namespace les03
     [Serializable]
     public class Student
     {
-        private int _age;
+        private int age;
         public string FirstName;
         public string LastName;
 
         public int Age
         {
-            get { return _age; }
-            set { _age = value; }
+            get { return age; }
+            set {if (value > 0) age = value; }
         }
     }
     class Program
@@ -43,6 +43,15 @@ namespace les03
 
         static void Main(string[] args)
         {
+            Student student = new Student();
+            student.Age = 20;
+            student.FirstName = "Максим";
+            student.LastName = "Кузнецов";
+            SaveAsXmlFormat(student, "data.xml");
+            student = LoadFromXmlFormat("data.xml");
+            Console.WriteLine($"{student.FirstName}, {student.LastName}, {student.Age}");
+
+            Console.ReadKey();
         }
     }
 }
