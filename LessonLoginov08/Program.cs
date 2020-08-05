@@ -15,7 +15,7 @@ namespace LessonLoginov08
     {
         static void Main(string[] args)
         {
-            var json = JObject.Parse(new WebClient() { Encoding = Encoding.UTF8 }.DownloadString(@"https://api.telegram.org/bot1001321317:AAFL2MLgX7bdyxNNmrKEVMZ-Hb3HLUk6GOQ/getupdates"));
+            dynamic json = JObject.Parse(new WebClient() { Encoding = Encoding.UTF8 }.DownloadString(@"https://api.telegram.org/bot1001321317:AAFL2MLgX7bdyxNNmrKEVMZ-Hb3HLUk6GOQ/getupdates"));
             Console.WriteLine(json);
 
             try
