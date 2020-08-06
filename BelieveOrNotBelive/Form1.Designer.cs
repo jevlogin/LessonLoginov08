@@ -35,7 +35,14 @@
             this.miSave = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.miExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnSaveQuest = new System.Windows.Forms.Button();
+            this.nudNumber = new System.Windows.Forms.NumericUpDown();
+            this.cboxTrue = new System.Windows.Forms.CheckBox();
+            this.tboxQuestion = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNumber)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -65,42 +72,105 @@
             this.miNew.Name = "miNew";
             this.miNew.Size = new System.Drawing.Size(180, 22);
             this.miNew.Text = "New";
+            this.miNew.Click += new System.EventHandler(this.miNew_Click);
             // 
             // miOpen
             // 
             this.miOpen.Name = "miOpen";
-            this.miOpen.Size = new System.Drawing.Size(180, 22);
+            this.miOpen.Size = new System.Drawing.Size(103, 22);
             this.miOpen.Text = "Open";
             // 
             // miSave
             // 
             this.miSave.Name = "miSave";
-            this.miSave.Size = new System.Drawing.Size(180, 22);
+            this.miSave.Size = new System.Drawing.Size(103, 22);
             this.miSave.Text = "Save";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(100, 6);
             // 
             // miExit
             // 
             this.miExit.Name = "miExit";
-            this.miExit.Size = new System.Drawing.Size(180, 22);
+            this.miExit.Size = new System.Drawing.Size(103, 22);
             this.miExit.Text = "Exit";
             this.miExit.Click += new System.EventHandler(this.miExit_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(62, 368);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "Добавить";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(223, 368);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "Удалить";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnSaveQuest
+            // 
+            this.btnSaveQuest.Location = new System.Drawing.Point(337, 368);
+            this.btnSaveQuest.Name = "btnSaveQuest";
+            this.btnSaveQuest.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveQuest.TabIndex = 3;
+            this.btnSaveQuest.Text = "Сохранить";
+            this.btnSaveQuest.UseVisualStyleBackColor = true;
+            // 
+            // nudNumber
+            // 
+            this.nudNumber.Location = new System.Drawing.Point(456, 368);
+            this.nudNumber.Name = "nudNumber";
+            this.nudNumber.Size = new System.Drawing.Size(120, 20);
+            this.nudNumber.TabIndex = 4;
+            this.nudNumber.ValueChanged += new System.EventHandler(this.nudNumber_ValueChanged);
+            // 
+            // cboxTrue
+            // 
+            this.cboxTrue.AutoSize = true;
+            this.cboxTrue.Location = new System.Drawing.Point(608, 368);
+            this.cboxTrue.Name = "cboxTrue";
+            this.cboxTrue.Size = new System.Drawing.Size(64, 17);
+            this.cboxTrue.TabIndex = 5;
+            this.cboxTrue.Text = "Правда";
+            this.cboxTrue.UseVisualStyleBackColor = true;
+            // 
+            // tboxQuestion
+            // 
+            this.tboxQuestion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tboxQuestion.Location = new System.Drawing.Point(0, 24);
+            this.tboxQuestion.Multiline = true;
+            this.tboxQuestion.Name = "tboxQuestion";
+            this.tboxQuestion.Size = new System.Drawing.Size(800, 338);
+            this.tboxQuestion.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tboxQuestion);
+            this.Controls.Add(this.cboxTrue);
+            this.Controls.Add(this.nudNumber);
+            this.Controls.Add(this.btnSaveQuest);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudNumber)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,6 +185,12 @@
         private System.Windows.Forms.ToolStripMenuItem miSave;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem miExit;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnSaveQuest;
+        private System.Windows.Forms.NumericUpDown nudNumber;
+        private System.Windows.Forms.CheckBox cboxTrue;
+        private System.Windows.Forms.TextBox tboxQuestion;
     }
 }
 
