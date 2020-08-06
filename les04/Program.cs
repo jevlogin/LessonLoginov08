@@ -1,9 +1,5 @@
 ﻿using ComplexLibrary;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 /**
@@ -15,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace les04
 {
-    
+
     class Program
     {
         static void Main(string[] args)

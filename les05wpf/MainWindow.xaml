@@ -10,7 +10,7 @@
         <TextBox x:Name="txt1" FontSize="22" HorizontalAlignment="Left" Height="40" Margin="50,50,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txt2" FontSize="22" HorizontalAlignment="Left" Height="40" Margin="190,50,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBlock Name="txtBlock" HorizontalAlignment="Left" Margin="560,50,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="40" Width="120"/>
-        <Button x:Name="btn" Content="Button" HorizontalAlignment="Left" Margin="360,50,0,0" VerticalAlignment="Top" Width="120" Height="40"/>
+        <Button x:Name="btn" Content="Button" HorizontalAlignment="Left" Margin="360,50,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="btn_Click"/>
 
     </Grid>
 </Window>
