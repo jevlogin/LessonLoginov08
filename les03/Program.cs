@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace les03
@@ -20,6 +16,7 @@ namespace les03
             get { return age; }
             set {if (value > 0) age = value; }
         }
+        public override string ToString() => $"{FirstName}, {LastName}, {Age}";
     }
     class Program
     {
@@ -49,7 +46,7 @@ namespace les03
             student.LastName = "Кузнецов";
             SaveAsXmlFormat(student, "data.xml");
             student = LoadFromXmlFormat("data.xml");
-            Console.WriteLine($"{student.FirstName}, {student.LastName}, {student.Age}");
+            Console.WriteLine(student);
 
             Console.ReadKey();
         }
