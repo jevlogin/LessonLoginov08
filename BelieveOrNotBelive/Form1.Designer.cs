@@ -77,14 +77,16 @@
             // miOpen
             // 
             this.miOpen.Name = "miOpen";
-            this.miOpen.Size = new System.Drawing.Size(103, 22);
+            this.miOpen.Size = new System.Drawing.Size(180, 22);
             this.miOpen.Text = "Open";
+            this.miOpen.Click += new System.EventHandler(this.miOpen_Click);
             // 
             // miSave
             // 
             this.miSave.Name = "miSave";
-            this.miSave.Size = new System.Drawing.Size(103, 22);
+            this.miSave.Size = new System.Drawing.Size(180, 22);
             this.miSave.Text = "Save";
+            this.miSave.Click += new System.EventHandler(this.miSave_Click);
             // 
             // toolStripSeparator1
             // 
@@ -116,6 +118,7 @@
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Удалить";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSaveQuest
             // 
@@ -125,6 +128,7 @@
             this.btnSaveQuest.TabIndex = 3;
             this.btnSaveQuest.Text = "Сохранить";
             this.btnSaveQuest.UseVisualStyleBackColor = true;
+            this.btnSaveQuest.Click += new System.EventHandler(this.btnSaveQuest_Click);
             // 
             // nudNumber
             // 
