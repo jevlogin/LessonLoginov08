@@ -19,6 +19,29 @@ namespace les04
         public double Re { get; set; }
         public double Im { get; set; }
 
+        static public bool TryParse(string s, out Complex z)
+        {
+            try
+            {
+                var data = s.Split(',');
+                z = new Complex()
+                {
+                    Re = Convert.ToDouble(data[0]), //  можно и так Convert.ToDouble(data) (так как будет ссылаться на 1 элемент)
+                    Im = Convert.ToDouble(data[1])
+                };
+                return true;
+            }
+            catch (Exception)
+            {
+                z = new Complex();
+                return false;
+            }
+        }
+
+        public override string ToString()
+        {
+            return $"{Re} + {Im}i";
+        }
     }
     class Program
     {
@@ -30,12 +53,26 @@ namespace les04
                 Im = a.Im + b.Im
             };
         }
+
         static void Main(string[] args)
         {
-            Complex z1 = new Complex();
-            Complex z2 = new Complex();
+            Complex z1;
+            Console.WriteLine($"Введите 4.5,5.2");
+            var f = Complex.TryParse(Console.ReadLine(), out z1);
 
-            SumComplex(z1, z2);
+            Complex z2;
+            Console.WriteLine($"Введите 4.5,5.2");
+            f &= Complex.TryParse(Console.ReadLine(), out z2);
+
+            if (!f)
+            {
+                Console.WriteLine("Данные кривые");
+            }
+
+            if (f)
+            {
+                Console.WriteLine(SumComplex(z1, z2));
+            }
 
             Console.ReadKey();
         }
