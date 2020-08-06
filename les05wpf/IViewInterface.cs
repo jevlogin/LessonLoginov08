@@ -8,7 +8,8 @@ namespace les05wpf
 {
     public interface IViewInterface
     {
-        string Number1 { get; set; }
-        string Number2 { get; set; }
+        string Number1 { get; }
+        string Number2 { get; }
+        string OutputData { set; }
     }
 }

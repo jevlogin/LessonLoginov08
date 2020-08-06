@@ -19,25 +19,26 @@ namespace les05wpf
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, IViewInterface
     {
+        Adapter a;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            a = new Adapter(this);
         }
+
+        public string Number1 => txt1.Text;
+
+        public string Number2 => txt2.Text;
+
+        public string OutputData { set => txtBlock.Text = value; }
 
         private void btn_Click(object sender, RoutedEventArgs e)
         {
-            Complex z1;
-            var f = Complex.TryParse(txt1.Text, out z1);
-
-            Complex z2;
-            f &= Complex.TryParse(txt2.Text, out z2);
-
-            if (f)
-            {
-                txtBlock.Text = Complex.SumComplex(z1, z2).ToString();
-            }
+            a.Sum();
         }
     }
 }
