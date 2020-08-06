@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace les05wpf
+namespace ComplexLibrary
 {
     public interface IViewInterface
     {

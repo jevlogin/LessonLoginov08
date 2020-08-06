@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{3DB5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexLibrary", "ComplexLibrary\ComplexLibrary.csproj", "{9B1C75E1-48FD-46FE-9EAE-B2C999E8D41F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "les06winform", "les06winform\les06winform.csproj", "{C07FE8A8-BDBE-4605-9F21-7EE69BFDAF8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{9B1C75E1-48FD-46FE-9EAE-B2C999E8D41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B1C75E1-48FD-46FE-9EAE-B2C999E8D41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B1C75E1-48FD-46FE-9EAE-B2C999E8D41F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C07FE8A8-BDBE-4605-9F21-7EE69BFDAF8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C07FE8A8-BDBE-4605-9F21-7EE69BFDAF8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C07FE8A8-BDBE-4605-9F21-7EE69BFDAF8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C07FE8A8-BDBE-4605-9F21-7EE69BFDAF8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{97E3D6C0-665A-41F9-8CA4-532D60578449} = {C5C2BBA6-E508-43E0-8E08-3D07F7AE91D9}
 		{D21D9964-498D-4A54-AAEB-93494F7E5AFD} = {C5C2BBA6-E508-43E0-8E08-3D07F7AE91D9}
 		{9B1C75E1-48FD-46FE-9EAE-B2C999E8D41F} = {3DB5192C-BD7C-41E3-9D38-45A208135E9E}
+		{C07FE8A8-BDBE-4605-9F21-7EE69BFDAF8A} = {C5C2BBA6-E508-43E0-8E08-3D07F7AE91D9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C2DDE476-28B9-4DBD-8012-ABC4EE968B14}
