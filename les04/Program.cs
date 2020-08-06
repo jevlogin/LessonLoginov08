@@ -26,7 +26,7 @@ namespace les04
                 var data = s.Split(',');
                 z = new Complex()
                 {
-                    Re = Convert.ToDouble(data[0]), //  можно и так Convert.ToDouble(data) (так как будет ссылаться на 1 элемент)
+                    Re = Convert.ToDouble(data[0]),
                     Im = Convert.ToDouble(data[1])
                 };
                 return true;
