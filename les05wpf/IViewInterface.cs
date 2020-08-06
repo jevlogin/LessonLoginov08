@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace les05wpf
 {
-    interface IViewInterface
+    public interface IViewInterface
     {
+        string Number1 { get; set; }
+        string Number2 { get; set; }
     }
 }
